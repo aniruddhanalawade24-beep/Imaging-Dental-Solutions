@@ -174,8 +174,7 @@
       <!-- NEW BRANCH 4: HINJAWADI -->
       <div class="branch-card">
         <h3>HINJAWADI</h3>
-        <img class="branch-img"
-          src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=600&q=80"
+        <img class="branch-img" src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=600&q=80"
           alt="Hinjawadi Branch" />
         <p class="address">
           <strong>Address:</strong> Shop No. 210, Second Floor, Vantage Capital,
@@ -253,12 +252,43 @@
     <a href="#">Astra WordPress Theme</a>
   </footer>
 
-  <div class="chat-widget">
-    <div class="contact-label">contact us</div>
-    <div class="chat-icon">
-      <i class="fas fa-comment-dots"></i>
+  <div class="floating-contact-container" id="floatingContact">
+    <div class="floating-menu">
+      <a href="tel:+918446231590" class="menu-item phone" target="_blank" rel="noopener noreferrer" title="Call Us" aria-label="Call us">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://wa.me/918446231590" class="menu-item whatsapp" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/imagingdentalsolutions" class="menu-item instagram" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Visit Instagram profile">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
+
+    <div class="contact-tooltip">contact us</div>
+
+    <button class="floating-btn" id="contactToggleBtn" aria-label="Open contact options" type="button">
+      <i class="fas fa-comment icon-default"></i>
+      <i class="fas fa-times icon-close"></i>
+    </button>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("contactToggleBtn");
+      const container = document.getElementById("floatingContact");
+
+      toggleBtn.addEventListener("click", function () {
+        container.classList.toggle("active");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!container.contains(event.target) && container.classList.contains("active")) {
+          container.classList.remove("active");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
