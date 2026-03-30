@@ -353,6 +353,13 @@ section:hover h2.section-title::after {
   gap: 40px;
 }
 
+.branches-divider {
+  grid-column: 1 / -1;
+  height: 2px;
+  background: #333;
+  margin: 12px 0 20px;
+}
+
 .branch-card {
   background: white;
   text-align: center;
@@ -476,6 +483,12 @@ section:hover h2.section-title::after {
   padding: 10px;
   background-color: #f8faff;
   border-radius: 8px;
+}
+
+.email-info.with-email {
+  display: block;
+  text-align: center;
+  line-height: 1.7;
 }
 
 .email-info i {
