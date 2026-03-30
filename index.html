@@ -12,16 +12,22 @@
 </head>
 
 <body>
-  <section class="hero">
-    <h1>IMAGING DENTAL<br />SOLUTIONS</h1>
-    <h3>CBCT & OPG DENTAL X RAY<br />IN WAKAD,CHINCHWAD & DOMBIVALI</h3>
-    <p>
-      Experience unparalleled dental imaging with Precise, Fast and detailed
-      reporting.
-    </p>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="fade-in-up">IMAGING DENTAL<br />SOLUTIONS</h1>
+      <h3 class="fade-in-up delay-1">CBCT & OPG DENTAL X-RAY<br />IN WAKAD, CHINCHWAD & DOMBIVALI</h3>
+      <p class="fade-in-up delay-2">
+        Experience unparalleled dental imaging with precise, fast, and detailed
+        reporting.
+      </p>
+      <div class="hero-buttons fade-in-up delay-3">
+        <a href="#branches" class="btn-primary">Find a Branch</a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
   </section>
 
-  <section class="about-section container">
+  <section class="about-section container" id="about">
     <div class="about-content">
       <h2>IMAGING DENTAL<br />SOLUTIONS</h2>
       <p>
@@ -57,7 +63,7 @@
     </div>
   </section>
 
-  <section class="services-section container">
+  <section class="services-section container" id="services">
     <h2 class="section-title">OUR SERVICES</h2>
     <div class="services-grid">
       <div class="service-card">
@@ -107,8 +113,8 @@
     </div>
   </section>
 
-  <section class="branches-section container">
-    <h2 class="section-title">OUR Branches</h2>
+  <section class="branches-section container" id="branches">
+    <h2 class="section-title">OUR BRANCHES</h2>
     <div class="branches-grid">
 
       <!-- EXISTING BRANCH 1: WAKAD -->
@@ -120,13 +126,16 @@
           no. 309, khinvasara trade centre, dutta mandir road, Wakad Pune.
         </p>
         <div class="button-group">
-          <a href="#" class="btn-contact">CONTACT</a>
-          <a href="#" class="btn-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i
-              class="fab fa-whatsapp"></i></a>
+          <a href="tel:7387907012" class="btn-contact">CONTACT</a>
+          <a href="https://wa.me/917387907012" class="btn-whatsapp" aria-label="Chat on WhatsApp"
+            title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
         <div class="email-info with-email">
           <i class="fas fa-envelope"></i> email us at :<br />imagingdentalsolutions@gmail.com
           <br /><i class="fas fa-phone"></i> Appointment : (+91) 7387907012
+        </div>
+        <div class="email-info" style="margin-top: -10px;">
+          <i class="fas fa-phone"></i> Appointment : (+91) 7387907012
         </div>
         <div class="map-container">
           <iframe
@@ -145,13 +154,16 @@
           Pimpri-Chinchwad, Maharashtra 411033
         </p>
         <div class="button-group">
-          <a href="#" class="btn-contact">CONTACT</a>
-          <a href="#" class="btn-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i
-              class="fab fa-whatsapp"></i></a>
+          <a href="tel:8208459727" class="btn-contact">CONTACT</a>
+          <a href="https://wa.me/918208459727" class="btn-whatsapp" aria-label="Chat on WhatsApp"
+            title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
           <div class="email-info with-email">
           <i class="fas fa-envelope"></i> email :<br />imagingdentalchinchwad@gmail.com
             <br /><i class="fas fa-phone"></i> Appointment : (+91) 8208459727
+        </div>
+        <div class="email-info" style="margin-top: -10px;">
+          <i class="fas fa-phone"></i> Appointment : (+91) 8208459727
         </div>
         <div class="map-container">
           <iframe
@@ -170,13 +182,16 @@
           , besides HDFC bank, phadke road, Dombivali east
         </p>
         <div class="button-group">
-          <a href="#" class="btn-contact">CONTACT</a>
-          <a href="#" class="btn-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i
-              class="fab fa-whatsapp"></i></a>
+          <a href="tel:9890378366" class="btn-contact">CONTACT</a>
+          <a href="https://wa.me/919890378366" class="btn-whatsapp" aria-label="Chat on WhatsApp"
+            title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
         <div class="email-info with-email">
           <i class="fas fa-envelope"></i> email :<br />tomoscan2022@gmail.com
           <br /><i class="fas fa-phone"></i> Appointment : (+91) 9890378366
+        </div>
+        <div class="email-info" style="margin-top: -10px;">
+          <i class="fas fa-phone"></i> Appointment : (+91) 9890378366
         </div>
         <div class="map-container">
           <iframe
@@ -266,18 +281,44 @@
     </div>
   </section>
 
-  <footer>
-    Copyright © 2026 IMAGING DENTAL SOLUTIONS | Powered by
-    <a href="#">Astra WordPress Theme</a>
+  <footer class="main-footer" id="contact">
+    <div class="footer-container container">
+      <div class="footer-brand">
+        <h2>IMAGING DENTAL <span>SOLUTIONS</span></h2>
+        <p>State-of-the-art dental imaging and diagnostics center with precise and fast reporting.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#branches">Our Branches</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-phone"></i> +91 8446231590</p>
+        <p><i class="fas fa-envelope"></i> imagingdentalsolutions@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 IMAGING DENTAL SOLUTIONS | All Rights Reserved.</p>
+    </div>
   </footer>
 
   <div class="floating-contact-container" id="floatingContact">
     <div class="floating-menu">
-      <a href="tel:+918446231590" class="menu-item phone" target="_blank" rel="noopener noreferrer" title="Call Us"
+      <a href="tel:+917387907012" class="menu-item phone" target="_blank" rel="noopener noreferrer" title="Call Us"
         aria-label="Call us">
         <i class="fas fa-phone"></i>
       </a>
-      <a href="https://wa.me/918446231590" class="menu-item whatsapp" target="_blank" rel="noopener noreferrer"
+      <a href="https://wa.me/917387907012" class="menu-item whatsapp" target="_blank" rel="noopener noreferrer"
         title="WhatsApp" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
       </a>
