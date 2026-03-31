@@ -8,12 +8,16 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   color: #333;
   line-height: 1.6;
   background-color: #fff;
+  max-width: 100%;
+  overflow-x:hidden;
 }
 
 .container {
@@ -358,6 +362,7 @@ section:hover h2.section-title::after {
   height: 2px;
   background: #333;
   margin: 12px 0 20px;
+  display: none;
 }
 
 .branch-card {
@@ -836,6 +841,44 @@ section:hover h2.section-title::after {
   .team-grid,
   .branches-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    display: block;
+    width: calc(100% - 36px);
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  .about-image::before {
+    display: none;
+  }
+
+  .team-grid img {
+    width: calc(100% - 16px);
+    margin: 0 auto;
+  }
+
+  .service-card img,
+  .branch-card img.branch-img {
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about-content {
+    text-align: center;
+    margin: 0 12px;
+    padding: 0 8px;
+  }
+
+  .about-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-content p {
+    text-align: left;
   }
 
   .footer-container {
